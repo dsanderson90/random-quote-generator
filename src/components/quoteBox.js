@@ -78,7 +78,7 @@ const Button = styled.a`
         <Text id="text">"{text}"</Text>
         <Author id="author">- {author}</Author>
         <Button id="new-quote" onClick={this.getRandomQuote}>Get Random Quote</Button>
-        <Button id="tweet-quote" target='_blank' href={this.shareQuote(this.state.currentQuote.text, this.state.currentQuote)}>Tweet Quote</Button>
+        <Button id="tweet-quote" target='_blank' href={this.shareQuote(text, author)}>Tweet Quote</Button>
       </Wrapper>
     );
   }
