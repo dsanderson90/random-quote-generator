@@ -76,7 +76,7 @@ const Button = styled.a`
         <Text id="text">"{this.state.currentQuote.text}"</Text>
         <Author id="author">- {this.state.currentQuote.author}</Author>
         <Button id="new-quote" onClick={this.getRandomQuote}>Get Random Quote</Button>
-        <Button target='_blank' href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(this.state.currentQuote.text)}&via=${encodeURIComponent(this.state.currentQuote.author)}`}id="tweet">Tweet</Button>
+        <Button id="tweet-quote" target='_blank' href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(this.state.currentQuote.text)}&via=${encodeURIComponent(this.state.currentQuote.author)}`}>Tweet Quote</Button>
       </Wrapper>
     );
   }
